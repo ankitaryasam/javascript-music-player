@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMusic-Player</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0-10/css/all.css" integrity="sha512-Dj9pt3sZROOuTTs9S89ykGZeu1XQgWKg3DVpu5tZALApsrWdd3tnVjTclUuVONaHM4O8GgCnjSbHlTKXrd2OWg==" crossorigin="anonymous" />
+</head>
+<body>
+    
+    <div class="main">
+        <div class="music-container">
+            <h2 id="songName">Song1</h2>
+            <h3 id="artistName">Owner Credits</h3>
+
+            <div class="img-container">
+                <img src="./img/song1.jpg" alt="">
+            </div>
+
+            <!--audio-->
+            <audio src="./music/song1.mp3" ontimeupdate="upadateBar()"></audio>
+
+            <!--control buttons-->
+            <div class="control-buttons">
+                <i class="fas fa-step-backward" id="prev"></i>
+                <i class="fas fa-play playBtn" id="play" title="play"></i>
+                <i class="fas fa-step-forward" id="next"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+</html>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Jost', sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.music-container{
+    height: 31rem;
+    width: 20rem;
+    background-color:#e5ff99;
+    border-radius: 4px;
+    box-shadow: 0px 0px 22px 2px #0000008f;
+    text-align:center;
+
+}
+.music-container #songName{
+    font-size:24px;
+    text-transform: uppercase;
+    word-spacing: 0.18rem;
+    letter-spacing: .15rem;
+    margin-top: 5%;
+}
+.music-container #artistName{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 2%;
+    color: #52525296;
+}
+.img-container{
+    margin: auto;
+    height: 15rem;
+    width: 15rem;
+    margin-top: 10%;
+    margin-bottom: 12%;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0px 17px 1px #b28aff;
+}
+.control-buttons{
+    margin-top: 20%;
+    box-shadow: 0 0px 16px -4px #111111 ;
+    width: 15rem;
+    margin: auto;
+    background-color: white;
+    border-radius: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1.2rem;
+}
+.control-buttons .playBtn{
+    width: 2rem;
+    height: 2rem;
+    background-color: #111;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-buttons .fas:hover{
+   color: grey;
+   cursor: pointer;
+}
+.rotateAnime{
+    animation: rotatePic 7s linear infinite;
+}
+
+@keyframes rotatePic{
+    from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+}
